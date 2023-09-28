@@ -39,11 +39,21 @@ Config for a fresh Ubuntu installation (read: my research workstation).
 ## Dock
 
 1. Files
-2. Firefox
-3. Visual Studio Code
-4. Spotify
+2. System Monitor
+3. Firefox
+4. Visual Studio Code
+5. Spotify
 
 ## Applications
+
+### Bloatware
+
+Uninstall the following from Ubuntu Software:
+
+- AisleRiot Solitaire
+- Mahjongg
+- Mines
+- Sudoku
 
 ### Spotify
 
