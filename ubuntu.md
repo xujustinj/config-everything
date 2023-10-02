@@ -40,9 +40,11 @@ Config for a fresh Ubuntu installation (read: my research workstation).
 
 1. Files
 2. System Monitor
-3. Firefox
-4. Visual Studio Code
-5. Spotify
+3. Calculator
+4. Firefox
+5. Visual Studio Code
+6. Spotify
+7. Slack
 
 ## Applications
 
@@ -64,6 +66,16 @@ Install via Snap Store.
 1. Install via Snap Store.
 2. Sign in with GitHub (sync only Settings).
 
+## Slack
+
+Install via Snap Store.
+
 ## Troubleshooting
 
-- [Ubuntu Software not loading](https://askubuntu.com/a/1291111)
+### Ubuntu Software Hangs
+
+> See also: [Ubuntu Software not loading](https://askubuntu.com/a/1291111).
+
+```sh
+killall snap-store
+```

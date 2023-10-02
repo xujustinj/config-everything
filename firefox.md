@@ -1,7 +1,5 @@
 # Configure Firefox
 
-Config for Firefox.
-
 ## Settings
 
 Can be found at `about:preferences`.
