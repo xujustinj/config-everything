@@ -43,8 +43,9 @@ Config for a fresh Ubuntu installation (read: my research workstation).
 3. Calculator
 4. Firefox
 5. Visual Studio Code
-6. Spotify
-7. Slack
+6. Typora
+7. Spotify
+8. Slack
 
 ## Applications
 
@@ -61,12 +62,16 @@ Uninstall the following from Ubuntu Software:
 
 Install via Snap Store.
 
-## Visual Studio Code
+### Visual Studio Code
 
 1. Install via Snap Store.
 2. Sign in with GitHub (sync only Settings).
 
-## Slack
+### Slack
+
+Install via Snap Store.
+
+### Typora
 
 Install via Snap Store.
 

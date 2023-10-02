@@ -1,4 +1,4 @@
-# Slack
+# Configure Slack
 
 ## Preferences (Ubuntu)
 
