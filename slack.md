@@ -18,7 +18,7 @@ As of 2023-10-02 the Ubuntu desktop app for Slack is not very good; notably it c
   - **Separate direct messages and apps from channels in sidebar** = `true`
 - **Themes**
   - **Colour Mode** = `Dark`
-  - **Theme colours** = `Barbra`
+  - **Theme colours** = `Hoth`
 - **Messages & media**
   - **Names** = `Full & display names`
 - **Language & region**

@@ -18,9 +18,15 @@ Config for a fresh Ubuntu installation (read: my research workstation).
       - **Show Volumes and Devices** = `false`
 - **Power**
   - **Power Mode** = `Performance`
+  - **Power Saving Options**
+    - **Screen Blank** = `Never`
   - **Suspend & Power Button**
     - **Power Button Behavior** = `Nothing`
-- **Region & Language**
+- **Screen Display**
+  - **Night Light**
+    - **Night Light** = `true`
+    - **Color Temperature** = `Less Warm`
+- **Language and Region**
   - **My Account**
     - **Language**
       - **Language** = `English (Canada)`
@@ -46,10 +52,9 @@ Config for a fresh Ubuntu installation (read: my research workstation).
 6. Typora
 7. Spotify
 8. Slack
+9. Prospect Mail
 
 ## Applications
-
-### Bloatware
 
 Uninstall the following from Ubuntu Software:
 
@@ -58,22 +63,38 @@ Uninstall the following from Ubuntu Software:
 - Mines
 - Sudoku
 
-### Spotify
+Install the following from Ubuntu Software:
 
-Install via Snap Store.
+- GNOME Tweaks
+- Prospect Mail
+- Slack
+- Spotify
+- Typora
+- Visual Studio Code
+- Xournal++
 
-### Visual Studio Code
+## GNOME Tweaks
 
-1. Install via Snap Store.
-2. Sign in with GitHub (sync only Settings).
+- **General**
+  - **Suspend when laptop lid is closed** = `false`
+- **Keyboard & Mouse**
+  - **Mouse**
+    - **Middle Click Paste** = `false`
+  - **Touchpad**
+    - **Mouse Click Emulation** = `Area`
+- **Top Bar**
+  - **Clock**
+    - **Weekday** = `true`
+    - **Date** = `true`
+    - **Seconds** = `true`
 
-### Slack
+## Configure APT
 
-Install via Snap Store.
+Before the first time you use an APT command (such as `apt-get`), run the following command:
 
-### Typora
-
-Install via Snap Store.
+```sh
+sudo dpkg --configure -a
+```
 
 ## Troubleshooting
 
