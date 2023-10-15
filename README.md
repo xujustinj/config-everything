@@ -2,9 +2,17 @@
 
 This repository contains all the weird settings I ([xujustinj](https://github.com/xujustinj)) use to configure things.
 
+## Devices
+
+- [Lenovo ThinkPad P15s](./lenovo_p15s.md)
+
 ## Operating Systems
 
 - [Ubuntu](./ubuntu.md)
+
+## Utilities
+
+- [Hardware Sensors Indicator](./sensors.md)
 
 ## Web Browsers
 

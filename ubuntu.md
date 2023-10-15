@@ -66,6 +66,7 @@ Uninstall the following from Ubuntu Software:
 Install the following from Ubuntu Software:
 
 - GNOME Tweaks
+- Hardware Sensors Indicator (the one by Alex Murray)
 - Prospect Mail
 - Slack
 - Spotify
