@@ -26,7 +26,11 @@ Can be found at `about:preferences`.
 
 ### Tree-Style Tab
 
-[Tree Style Tab](https://superuser.com/a/1424494) is a Firefox add-on for nested vertical-style tabs.
+[Tree Style Tab](https://addons.mozilla.org/firefox/addon/tree-style-tab/) is a Firefox add-on for nested vertical-style tabs.
 
 1. Follow [this StackExchange answer](https://superuser.com/a/1619663) which explains how to create and use a `userChrome.css` file to hide the default Firefox tabs and the Tree Style Tab header.
 2. Refer to [`userChrome.css`](./userChrome.css) for a CSS file that combines the best of all answers from the above StackExchange thread.
+
+### Dashlane
+
+[Dashlane](https://addons.mozilla.org/firefox/addon/dashlane/) is a Firefox add-on for managing passwords and other secrets.

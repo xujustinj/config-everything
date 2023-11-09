@@ -16,7 +16,7 @@ This repository contains all the weird settings I ([xujustinj](https://github.co
 
 ## Web Browsers
 
-- [Firefox](./firefox.md)
+- [Firefox](./firefox/README.md)
 
 ## Developer Tools
 
