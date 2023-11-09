@@ -22,6 +22,7 @@ This repository contains all the weird settings I ([xujustinj](https://github.co
 
 - [Git](./git/README.md)
 - [SSH](./ssh.md)
+- [Jupyter Notebook](./python/jupyter.md)
 
 ## Applications
 
