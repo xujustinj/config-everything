@@ -20,7 +20,7 @@ This repository contains all the weird settings I ([xujustinj](https://github.co
 
 ## Developer Tools
 
-- [Git](./git.md)
+- [Git](./git/README.md)
 - [SSH](./ssh.md)
 
 ## Applications

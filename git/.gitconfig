@@ -1,0 +1,7 @@
+[init]
+	defaultBranch = main
+[pull]
+	rebase = true
+[user]
+	email = xu.justin.j@gmail.com
+	name = Justin Xu

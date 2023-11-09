@@ -1,13 +1,21 @@
 # Configure Git
 
-## Opinionated Settings
+## Settings
+
+Run the following commands, or alternatively run
+```sh
+cp git/.gitconfig ~/.gitconfig
+```
+from the root of this repository.
+
+### Opinionated Configs
 
 ```sh
 git config --global init.defaultBranch main
 git config --global pull.rebase true
 ```
 
-## Personal
+### Personal Configs
 
 ```sh
 git config --global user.email "xu.justin.j@gmail.com"
@@ -21,4 +29,4 @@ git config --global user.name "Justin Xu"
 1. [Generate an SSH key.](./ssh.md#generate-a-default-ssh-key)
 2. Go to [SSH and GPG keys](https://github.com/settings/keys) in GitHub settings and click `New SSH key`.
 3. Copy the public key into the dialog and give the key a descriptive name.
-4. Run `ssh -T git@github.com`, and type `yes` if an authenticity warning appears.
+4. Run `ssh -T -- git@github.com`, and type `yes` if an authenticity warning appears.
