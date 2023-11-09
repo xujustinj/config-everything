@@ -19,6 +19,7 @@ Config for a fresh Ubuntu installation (read: my research workstation).
 - **Power**
   - **Power Mode** = `Performance`
   - **Power Saving Options**
+    - **Dim Screen** = `false`
     - **Screen Blank** = `Never`
   - **Suspend & Power Button**
     - **Power Button Behavior** = `Nothing`
