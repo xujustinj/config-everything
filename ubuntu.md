@@ -98,6 +98,12 @@ Before the first time you use an APT command (such as `apt-get`), run the follow
 sudo dpkg --configure -a
 ```
 
+Afterwards, before installing packages you should always first run
+
+```sh
+sudo apt-get update
+```
+
 ## Troubleshooting
 
 ### Ubuntu Software Hangs

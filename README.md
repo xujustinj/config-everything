@@ -18,11 +18,11 @@ This repository contains all the weird settings I ([xujustinj](https://github.co
 
 - [Firefox](./firefox/README.md)
 
-## Developer Tools
+## Development Tools
 
 - [Git](./git/README.md)
 - [SSH](./ssh.md)
-- [Jupyter Notebook](./python/jupyter.md)
+- [Python](./python.md)
 
 ## Applications
 

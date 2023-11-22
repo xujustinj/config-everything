@@ -1,0 +1,5 @@
+# This folder exists as a dump for temporary configuration artifacts,
+# such as installation scripts.
+*
+
+!.gitignore
