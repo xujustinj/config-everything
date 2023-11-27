@@ -1,0 +1,18 @@
+#!/bin/sh
+
+# Disables middle-click on all devices.
+
+set -e
+
+for DEVICE_ID in $(xinput --list --id-only)
+do
+    # try to get the current button map
+    if BUTTON_MAP=$(xinput --get-button-map "${DEVICE_ID}" 2> '/dev/null')
+    then
+        NEW_BUTTON_MAP=$(echo "${BUTTON_MAP}" | sed 's/\<2\>/0/g')
+        # Assume that button 0 is currently mapped to action 1 (left click).
+        # Meanwhile, map button 1 (middle click) to the null action.
+        # Buttons 2 and beyond are unchanged.
+        xinput --set-button-map "${DEVICE_ID}" ${NEW_BUTTON_MAP}
+    fi
+done

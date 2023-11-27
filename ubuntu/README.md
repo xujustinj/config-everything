@@ -90,6 +90,23 @@ Install the following from Ubuntu Software:
     - **Date** = `true`
     - **Seconds** = `true`
 
+## Disable Middle Click Paste
+
+Middle-click paste is the most infuriating GTK feature.
+[Patching it out of GTK](https://web.archive.org/web/20211025212803/https://app.assembla.com/spaces/slipstream/wiki/Disabling_GTK%27s_middle_mouse_button_functionality) is beyond my comfort zone, but there is an easier solution.
+Since I never use middle-click anyways, we can just remap it to null.
+The Ubuntu Wiki provides [a tutorial](https://wiki.ubuntu.com/X/Config/Input#Example:_Disabling_middle-mouse_button_paste_on_a_scrollwheel_mouse) for how to do exactly this via the `xinput` command:
+```sh
+xinput set-button-map "${DEVICE}" 1 0
+```
+
+The button maps modified using `xinput` do not persist through reboots.
+To set them again after each startup, place the commands in the `~/.xstartup` file.
+
+The [`.xstartup`](./.xstartup) file provided automatically goes through a list (WIP) of known mouse/trackpad devices and remaps all of their middle-clicks to the null action.
+
+> Alternatively, one could loop through all pointer devices from `xinput list`, but I prefer to be a bit more explicit.
+
 ## Configure APT
 
 Before the first time you use an APT command (such as `apt-get`), run the following command:

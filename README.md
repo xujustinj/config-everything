@@ -8,7 +8,7 @@ This repository contains all the weird settings I ([xujustinj](https://github.co
 
 ## Operating Systems
 
-- [Ubuntu](./ubuntu.md)
+- [Ubuntu](./ubuntu/README.md)
 
 ## Utilities
 
