@@ -48,12 +48,14 @@ Config for a fresh Ubuntu installation (read: my research workstation).
 1. Files
 2. System Monitor
 3. Calculator
-4. Firefox
-5. Visual Studio Code
-6. Typora
-7. Spotify
-8. Slack
-9. Prospect Mail
+4. Prospect Mail
+5. Slack
+6. Teams for Linux
+7. Zoom
+8. Spotify
+9. Typora
+10. Visual Studio Code
+11. Firefox
 
 ## Applications
 
@@ -71,9 +73,14 @@ Install the following from Ubuntu Software:
 - Prospect Mail
 - Slack
 - Spotify
+- Teams for Linux
 - Typora
 - Visual Studio Code
 - Xournal++
+
+Install the following via web download:
+
+- Zoom
 
 ## GNOME Tweaks
 
@@ -119,6 +126,20 @@ Afterwards, before installing packages you should always first run
 
 ```sh
 sudo apt-get update
+```
+
+## Fix MP3 and Other File Formats
+
+```sh
+sudo apt-get install ubuntu-restricted-extras
+```
+
+Use the arrow keys to navigate and accept any license agreement pop-ups.
+
+## Clipboard via Terminal
+
+```sh
+sudo apt-get install xclip
 ```
 
 ## Troubleshooting

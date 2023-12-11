@@ -1,5 +1,13 @@
 # Configure Lenovo ThinkPad P15s
 
+## UEFI
+
+- **Config**
+  - **Power**
+    - **Sleep State** = `Linux S3`
+  - **USB**
+    - **Always On USB** = `Off`
+
 ## Hardware Sensors Indicator
 
 Enable and relabel the following sensors:
