@@ -142,6 +142,22 @@ Use the arrow keys to navigate and accept any license agreement pop-ups.
 sudo apt-get install xclip
 ```
 
+## Disabling Swap
+
+> Source: [How to Permanently Disable Swap Partition in Linux](https://www.tecmint.com/disable-swap-partition/)
+
+Temporarily:
+
+```sh
+sudo swapoff --all
+```
+
+Permanently:
+
+1. run `sudo vi /etc/fstab`
+2. comment out the `swap` line (should be the last line)
+3. reboot
+
 ## Troubleshooting
 
 ### Ubuntu Software Hangs

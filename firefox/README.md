@@ -3,7 +3,7 @@
 ## Warning
 
 Firefox is one of those programs that will use as much memory as it can get, and then some more.
-At very high memory loads, thrashing of swap space will begin.
+At very high memory loads, swap thrashing will begin.
 After this point, pray that you can find some program to sacrifice to unlock some memory, otherwise you will either need to kill Firefox or kill the whole computer, taking Firefox with it.
 
 ## Settings
