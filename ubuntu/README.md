@@ -114,6 +114,12 @@ The [`.xstartup`](./.xstartup) file provided automatically goes through a list (
 
 > Alternatively, one could loop through all pointer devices from `xinput list`, but I prefer to be a bit more explicit.
 
+If the `~/.xstartup` file is not being run for whatever reason, you can [force it using cron](https://askubuntu.com/a/816) by running `crontab -e` and adding the line
+
+```cron
+@reboot sh ~/.xstartup
+```
+
 ## Configure APT
 
 Before the first time you use an APT command (such as `apt-get`), run the following command:
@@ -141,22 +147,6 @@ Use the arrow keys to navigate and accept any license agreement pop-ups.
 ```sh
 sudo apt-get install xclip
 ```
-
-## Disabling Swap
-
-> Source: [How to Permanently Disable Swap Partition in Linux](https://www.tecmint.com/disable-swap-partition/)
-
-Temporarily:
-
-```sh
-sudo swapoff --all
-```
-
-Permanently:
-
-1. run `sudo vi /etc/fstab`
-2. comment out the `swap` line (should be the last line)
-3. reboot
 
 ## Troubleshooting
 
