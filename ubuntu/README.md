@@ -114,10 +114,26 @@ The [`.xstartup`](./.xstartup) file provided automatically goes through a list (
 
 > Alternatively, one could loop through all pointer devices from `xinput list`, but I prefer to be a bit more explicit.
 
-If the `~/.xstartup` file is not being run for whatever reason, you can [force it using cron](https://askubuntu.com/a/816) by running `crontab -e` and adding the line
+## Disable Emoji Keyboard
 
-```cron
-@reboot sh ~/.xstartup
+The emoji keyboard is the second-most annoying feature.
+
+```sh
+sudo apt install dbus-x11
+sudo ibus-setup
+```
+
+Then, in the IBus Preferences window:
+
+- **Emoji**
+  - **Keyboard Shortcuts**
+    - **Emoji annotation:**
+      - delete all keyboard shortcuts
+
+```sh
+sudo ibus restart
+# or, if you don't want IBus to keep running
+sudo ibus exit
 ```
 
 ## Configure APT
