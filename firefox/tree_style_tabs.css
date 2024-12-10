@@ -1,0 +1,23 @@
+/* add red highlight under unread tabs */
+#tabbar tab-item.unread:not(:hover):not(.pinned) .background {
+    background-color: rgba(192, 64, 64, 0.25)
+}
+/* https://github.com/piroor/treestyletab/wiki/Code-snippets-for-custom-style-rules#hide-the-unread-dot-3290 */
+#tabbar tab-item.faviconized.unread tab-favicon::before {
+    background-image: none;
+}
+
+/* less aggressive overflow fade */
+#tabbar tab-label.overflow {
+    mask-image: linear-gradient(to left, transparent 0, black 8px);
+}
+
+/* https://github.com/piroor/treestyletab/wiki/Code-snippets-for-custom-style-rules#custom-background-of-the-tab-panebar-2731 */
+:root.sidebar #background {
+    background-color: rgb(32, 32, 32);
+}
+
+/* https://github.com/piroor/treestyletab/wiki/Code-snippets-for-custom-style-rules#only-show-tab-close-button-on-hover-1448 */
+#tabbar tab-item tab-item-substance:not(:hover) tab-closebox {
+    display: none;
+}

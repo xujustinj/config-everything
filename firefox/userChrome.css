@@ -1,45 +1,70 @@
 /* from https://superuser.com/a/1424494 */
-
-/* hides the sidebar */
+/* hides the enormous Tree Style Tabs sidebar */
 #sidebar-header {
   visibility: collapse !important;
 }
 
-
 /* from https://superuser.com/a/1619663 */
+/* hide tabs, Firefox home, tab dropdown */
+#navigator-toolbox > #TabsToolbar > .toolbar-items {
+    display: none;
+}
 
-#tabbrowser-tabs {
-  visibility: collapse;
+/* ensure that the min/max/close buttons are always beside the navigation bar regardless of whether the menu bar is shown */
+#navigator-toolbox > #toolbar-menubar > .titlebar-buttonbox-container {
+    display: none !important;
 }
+#navigator-toolbox > #TabsToolbar > .titlebar-buttonbox-container {
+    display: flex !important;
+}
+
+/* add a bit of margin around the buttons to make things more comfortable */
+#navigator-toolbox > * > .titlebar-buttonbox-container {
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+/* hide in-private label because it's too big */
+#navigator-toolbox > #TabsToolbar > .private-browsing-indicator-with-label > .private-browsing-indicator-label {
+    display: none;
+}
+
+/* display the elements in forced order: menubar, navbar, buttons, bookmarks */
+/* 142px is exactly enough horizontal space for the buttons, an optional inprivate icon, and margins */
 #navigator-toolbox {
-  display: flex;
-  flex-flow: row wrap;
+    display: flex;
+    flex-flow: row wrap;
 }
-#titlebar {
-  order: 1;
-  max-width: 108px;
+#navigator-toolbox > #toolbar-menubar {
+    order: 0;
+    width: 100%;
 }
-#titlebar #TabsToolbar {
-  background-color: var(--toolbar-bgcolor);
-  background-image: var(--toolbar-bgimage)
+#navigator-toolbox > #nav-bar {
+    order: 1;
+    width: calc(100% - 142px);
 }
-#titlebar #TabsToolbar .titlebar-spacer {
-  background-color: rgba(0,0,0,0.05);
-  margin: 3px;
-  border-radius: 25%;
-  cursor: grab;
+#navigator-toolbox > #TabsToolbar {
+    order: 2;
+    max-width: 142px;
+    justify-content: end;
 }
-#titlebar #TabsToolbar .titlebar-spacer[type="pre-tabs"] {
-  display: none;
+#navigator-toolbox > #PersonalToolbar {
+    order: 3;
+    width: 100%;
 }
-#nav-bar {
-  order: 0;
-  width: calc(100% - 108px);
+
+/* fix the crooked hitbox of the hamburger menu */
+#PanelUI-button > #PanelUI-menu-button {
+    padding-inline-end: 0;
 }
-#PersonalToolbar {
-  order: 2;
+
+/* remove annoying extra spaces */
+#navigator-toolbox .titlebar-spacer {
+    display: none;
 }
-/* Update - Hides the new Firefox home + tab dropdown. If you want to keep/customize those buttons. remove the CSS below and adjust the widths above to get everything fitting in one line */
-#TabsToolbar .toolbar-items {
-  display: none;
+
+/* make the background of all toolbar elements the same */
+/* somehow this doesn't seem to break themes */
+.browser-toolbar {
+    background-color: unset !important;
 }

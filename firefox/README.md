@@ -80,6 +80,8 @@ TST on its own looks pretty horrid because it does not (cannot) hide the Firefox
 2. Refer to [`userChrome.css`](./userChrome.css) for a CSS file that combines the best of all answers from the above StackExchange thread.
 
 - **Unlock Expert Options** = `true`
+- **Appearance**
+  - **Shift tabs aside to keep in-tab buttons touchable avoiding covered with the auto-shown scrollbar** = `2px`
 - **Context Menu**
   - **Additional Tab Context Menu Options**
     - **Top Menu** = `Close this Tree`, `Bookmark this Tree`
