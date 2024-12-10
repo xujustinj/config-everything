@@ -30,6 +30,17 @@ Can be found at `about:preferences`.
 
 ## Extensions
 
+[Auto Tab Discard](https://addons.mozilla.org/firefox/addon/auto-tab-discard/) is an essential Firefox add-on for reducing the terabytes of memory that this browser consumes.
+
+- **Discarding options**
+  - **Discard inactive tabs after** = `1` **minutes**
+
+### ClearURLs
+
+[ClearURLs](https://addons.mozilla.org/en-CA/firefox/addon/clearurls/) is a Firefox add-on for scrubbing tracking URL parameters.
+However, it breaks Google Sheets in infuriating ways, and there is no way to disable it on specific URLs.
+Do not use this extension until [#387 Seems to be interfering with Google Sheets in Firefox](https://github.com/ClearURLs/Addon/issues/387) is fixed.
+
 ### Dashlane
 
 [Dashlane](https://addons.mozilla.org/firefox/addon/dashlane/) is a Firefox add-on for managing passwords and other secrets.
@@ -74,7 +85,8 @@ Can be found at `about:preferences`.
 
 - **Run in Private Windows** = `Allow`
 
-TST on its own looks pretty horrid because it does not (cannot) hide the Firefox UI elements that it is supposed to replace. We will need to do that manually instead:
+TST on its own looks pretty horrid because it does not (cannot) hide the Firefox UI elements that it is supposed to replace.
+We will need to do that manually instead:
 
 1. Follow [this StackExchange answer](https://superuser.com/a/1619663) which explains how to create and use a `userChrome.css` file to hide the default Firefox tabs and the Tree Style Tab header.
 2. Refer to [`userChrome.css`](./userChrome.css) for a CSS file that combines the best of all answers from the above StackExchange thread.
@@ -94,11 +106,10 @@ TST on its own looks pretty horrid because it does not (cannot) hide the Firefox
 ### TST More Tree Commands
 
 - **Run in Private Windows** = `Allow`
-
 - **Visible command in the context menu** = `Create New Group from tabs`
 
 ### uBlock Origin
 
-[uBlock Origin](https://addons.mozilla.org/firefox/addon/ublock-origin/) is one of the many ad-blockers, but it's the one I happen to use. No good reason.
+[uBlock Origin](https://addons.mozilla.org/firefox/addon/ublock-origin/) is one of the many great ad-blockers.
 
 - **Run in Private Windows** = `Allow`
